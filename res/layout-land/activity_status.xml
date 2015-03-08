@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <Button
+        android:id="@+id/buttonTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/button_tweet" >
+    </Button>
+
+    <EditText
+        android:id="@+id/editStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/buttonTweet"
+        android:layout_toLeftOf="@+id/buttonTweet"
+        android:ems="10"
+        android:hint="@string/hint_status"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonTweet"
+        android:layout_below="@+id/buttonTweet"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="140"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
