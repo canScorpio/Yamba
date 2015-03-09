@@ -14,5 +14,6 @@
     <string name="tweet">tweet</string>
     <string name="refresh">refresh</string>
     <string name="purge">purge</string>
+    <string name="title_activity_status">StatusActivity</string>
 
 </resources>

@@ -22,6 +22,7 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int icon=0x7f020001;
     }
     public static final class id {
         public static final int action_purge=0x7f090007;
@@ -53,6 +54,7 @@ public final class R {
         public static final int purge=0x7f06000c;
         public static final int refresh=0x7f06000b;
         public static final int title_activity_main=0x7f060009;
+        public static final int title_activity_status=0x7f06000d;
         public static final int tweet=0x7f06000a;
         public static final int username=0x7f060005;
         public static final int username_summary=0x7f060006;
