@@ -1,6 +1,7 @@
 package com.marakana.yamba;
 
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -20,17 +21,24 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	public boolean onOptionsItemSelected(MenuItem item){
+
+	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
-			startActivity(new Intent(this,SettingsActivity.class));
+			startActivity(new Intent(this, SettingsActivity.class));
 			return true;
 		case R.id.action_tweet:
-			startActivity(new Intent(this,StatusActivity.class));
+			startActivity(new Intent(this, StatusActivity.class));
 			return true;
-		default:
-			return false;
+		case R.id.itemRefresh:
+			startService(new Intent(this, RefreshService.class));
+			break;
+		case R.id.itemPrefs:
+			startActivity(new Intent(this, MainActivity.class));
+			break;
+
 		}
+		return true;
 	}
 
 }

@@ -15,5 +15,7 @@
     <string name="refresh">refresh</string>
     <string name="purge">purge</string>
     <string name="title_activity_status">StatusActivity</string>
+    <string name="titlePrefs">titlePrefs</string>
+    <string name="titleRefresh">titleRefresh</string>
 
 </resources>

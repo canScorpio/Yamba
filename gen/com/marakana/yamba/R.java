@@ -32,6 +32,8 @@ public final class R {
         public static final int buttonTweet=0x7f090000;
         public static final int editStatus=0x7f090001;
         public static final int fragment_status=0x7f090003;
+        public static final int itemPrefs=0x7f090008;
+        public static final int itemRefresh=0x7f090009;
         public static final int textCount=0x7f090002;
     }
     public static final class layout {
@@ -53,6 +55,8 @@ public final class R {
         public static final int password_summary=0x7f060008;
         public static final int purge=0x7f06000c;
         public static final int refresh=0x7f06000b;
+        public static final int titlePrefs=0x7f06000e;
+        public static final int titleRefresh=0x7f06000f;
         public static final int title_activity_main=0x7f060009;
         public static final int title_activity_status=0x7f06000d;
         public static final int tweet=0x7f06000a;
