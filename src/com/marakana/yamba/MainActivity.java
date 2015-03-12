@@ -36,7 +36,8 @@ public class MainActivity extends Activity {
 		case R.id.itemPrefs:
 			startActivity(new Intent(this, MainActivity.class));
 			break;
-
+		default:
+			return false;
 		}
 		return true;
 	}
