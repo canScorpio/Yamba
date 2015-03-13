@@ -25,20 +25,21 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
-        public static final int action_purge=0x7f09000b;
-        public static final int action_refresh=0x7f09000a;
-        public static final int action_settings=0x7f090008;
-        public static final int action_tweet=0x7f090009;
-        public static final int buttonTweet=0x7f090001;
-        public static final int editStatus=0x7f090002;
-        public static final int fragment_status=0x7f090007;
+        public static final int action_purge=0x7f09000c;
+        public static final int action_refresh=0x7f09000b;
+        public static final int action_settings=0x7f090009;
+        public static final int action_tweet=0x7f09000a;
+        public static final int buttonTweet=0x7f090002;
+        public static final int editStatus=0x7f090003;
+        public static final int fragment_status=0x7f090008;
         public static final int fragment_timeline=0x7f090000;
-        public static final int itemPrefs=0x7f09000c;
-        public static final int itemRefresh=0x7f09000d;
-        public static final int list_item_text_created_at=0x7f090005;
-        public static final int list_item_text_message=0x7f090006;
-        public static final int list_item_text_user=0x7f090004;
-        public static final int textCount=0x7f090003;
+        public static final int frament_details=0x7f090001;
+        public static final int itemPrefs=0x7f09000d;
+        public static final int itemRefresh=0x7f09000e;
+        public static final int list_item_text_created_at=0x7f090006;
+        public static final int list_item_text_message=0x7f090007;
+        public static final int list_item_text_user=0x7f090005;
+        public static final int textCount=0x7f090004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -47,8 +48,9 @@ public final class R {
         public static final int new_activity_status=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int status=0x7f080001;
+        public static final int blank=0x7f080000;
+        public static final int main=0x7f080001;
+        public static final int status=0x7f080002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -62,6 +64,7 @@ public final class R {
         public static final int refresh=0x7f06000b;
         public static final int titlePrefs=0x7f06000e;
         public static final int titleRefresh=0x7f06000f;
+        public static final int title_activity_blank=0x7f060010;
         public static final int title_activity_main=0x7f060009;
         public static final int title_activity_status=0x7f06000d;
         public static final int tweet=0x7f06000a;

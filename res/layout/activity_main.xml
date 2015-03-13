@@ -9,10 +9,15 @@
     tools:context=".MainActivity" >
 <fragment
     android:id="@+id/fragment_timeline"
-    android:name=""
+    android:name="com.marakana.yamba.TimlelineFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:layout_centerHorizontal="true"    
     />
-
+<fragment
+    android:id="@+id/frament_details"
+    android:name="com.marakana.yamba.DetailsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
 </RelativeLayout>

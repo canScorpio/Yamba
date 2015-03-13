@@ -17,5 +17,6 @@
     <string name="title_activity_status">StatusActivity</string>
     <string name="titlePrefs">titlePrefs</string>
     <string name="titleRefresh">titleRefresh</string>
+    <string name="title_activity_blank">BlankActivity</string>
 
 </resources>

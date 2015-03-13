@@ -36,8 +36,8 @@ public class StatusProvider extends ContentProvider {
 			where = StatusContract.Cloumn.ID
 					+ "="
 					+ id
-					+ (TextUtils.isEmpty(selection) ? "" : "and ("
-							+ selectionArgs + ")");
+					+ (TextUtils.isEmpty(selection) ? "" : " and ("
+							+ selection + ")");
 			break;
 		default:
 			throw new IllegalArgumentException("Illegal uri" + uri);
