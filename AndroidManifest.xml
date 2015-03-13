@@ -17,6 +17,12 @@
         android:theme="@style/AppTheme" >
         <service android:name=".RefreshService" />
 
+        <provider
+            android:name="com.marakana.yamba.StatusProvider"
+            android:authorities="com.marakana.yamba.StatusProvider"
+            android:exported="false" >
+        </provider>
+
         <activity
             android:name="com.marakana.yamba.MainActivity"
             android:label="@string/app_name" >

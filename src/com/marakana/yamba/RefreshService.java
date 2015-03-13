@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.net.Uri;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -66,10 +67,9 @@ public class RefreshService extends IntentService {
 		}
 		Log.d(TAG, "onStarted2");
 		YambaClient cloud = new YambaClient(username, password);
-		DBHelper dbHelper = new DBHelper(this);
-		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		try {
+			int count = 0;
 			List<Status> timeline = cloud.getTimeline(20);
 			for (Status status : timeline) {
 				values.clear();
@@ -78,13 +78,19 @@ public class RefreshService extends IntentService {
 				values.put(StatusContract.Cloumn.MESSAGER, status.getMessage());
 				values.put(StatusContract.Cloumn.CREATE_AT, status
 						.getCreatedAt().getTime());
-				db.insertWithOnConflict(StatusContract.TABLE, null, values,
-						SQLiteDatabase.CONFLICT_IGNORE);
+				Uri uri = getContentResolver().insert(
+						StatusContract.CONTENT_URI, values);
+				if (uri != null) {
+					count++;
+					Log.d(TAG,
+							String.format("%s :%s", status.getUser(),
+									status.getMessage()));
+				}
 
 			}
 		} catch (YambaClientException e) {
 			// TODO: handle exception
-			Log.d(TAG, "Failed to fetch the timeline",e);
+			Log.d(TAG, "Failed to fetch the timeline", e);
 			e.printStackTrace();
 		}
 		return;
