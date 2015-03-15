@@ -12,7 +12,8 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="18dp"
         android:text="Slashdot"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textColor="@color/blue1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/list_item_text_created_at"
@@ -24,7 +25,7 @@
         android:layout_marginTop="19dp"
         android:text="10 minutes ago"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@android:color/secondary_text_light" />
+        android:textColor="@color/white3" />
 
     <TextView
         android:id="@+id/list_item_text_message"
@@ -37,6 +38,8 @@
         android:focusable="false"
         android:linksClickable="true"
         android:text="Android is easy"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/white3"
+        />
 
 </RelativeLayout>

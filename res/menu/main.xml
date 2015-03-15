@@ -3,7 +3,7 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        android:showAsAction="collapseActionView"
         android:title="@string/action_settings"/>
     <item
         android:id="@+id/action_tweet"
@@ -18,16 +18,8 @@
     <item
         android:id="@+id/action_purge"
         android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="always"
         android:title="@string/purge"/>
-    <item 
-        android:id="@+id/itemPrefs"
-        android:title="@string/titlePrefs"
-        android:icon="@android:drawable/ic_menu_preferences"
-        />
-    <item 
-        android:id="@+id/itemRefresh"
-        android:title="@string/titleRefresh"
-        android:icon="@android:drawable/ic_menu_rotate"
-        />
+
 
 </menu>

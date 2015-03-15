@@ -10,5 +10,5 @@
         android:key="password"
         android:summary="@string/password_summary"
         android:title="@string/password" />
-
+	
 </PreferenceScreen>
